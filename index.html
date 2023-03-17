@@ -5,40 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My personal website</title>
-    <style>
-        *{
-            padding: 0;
-        }
-        nav{
-            display: flex;
-            flex-direction: row;
-            height: 64px;
-            background-color: azure;
-            width: 100%;
-        }
-        nav img{
-            float: left;
-            width: 50px;
-            border-radius: 50%;
-        }
-        nav ul{
-            float: right;
-            display: flex;
-            justify-content: space-between;
-        }
-        nav ul a{
-            text-decoration: none;
-        }
-        nav ul a li{
-            list-style: none;
-            text-transform: uppercase;
-            margin-left: 20px;
-            color: green;
-        }
-        #landing{
-            margin-top: 100px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fav icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    
 </head>
 <body>
     <header>
@@ -56,95 +30,89 @@
     </header>
 
     <main>
-    <section id="landing">
-        <div>
-            <h1>Welcome to my personal website</h1>
-            <p>Dear visitor, i am glad you visited my site. Thanks again for that choice and please visit again incase of need</p>
-            <p>THis is where you get to know more about me, and could draw inspirations from here.</p>
-            <h4>Please continue reading through the site and i wish u good luck</h4>
-        </div>
-    </section> 
-    
 
-    <section id="about">
-        <div>
-            <h1>ABOUT ME</h1>
-            
-            <!-- paragraph one -->
-            <p>I am <b>Mamgbi Geofrey</b> (my photo is attached above) a ugandan citizen currently in ugandas capital kampala.
-                I am much involved into technology mostly computing and information technology and systems and as 
-                such, i hold a Bachelor's degree in Software engineering with a wide range of knowlege about techniques to
-                solve current problems facing the community interms of digitalizing the day to day activities.
-            </p>
-            <!-- paragraph two of about -->
-            <p>
-                I am a well brought up, committed and an innovative person who believes in job efficiency and 
-                yet accurate work. I am a person free to associate and work with any categories of people in 
-                the tasks assigned and therefore have good interpersonal skills. <br><br>
-                
-                Furthermore, I am a simple and easy to reach/approach person who values every person’s position 
-                as being equal and therefore can attend to any class/categories of people. Always doing the 
-                right thing at the right time is my slogan and ready to adapt to future changes in the 
-                organization, coming up with new skills as indicated by being innovative.
-            </p> 
-        </div>
-
-    </section>
-
-    
-
-    <section id="hobbies">
-        <div>
-            <h1>MY HOBBIES</h1>
-        
-            <p>Below is a list of my hobbies , and i really like participating in them.
-                Please click each of the hobby links to view its details.
-            </p>
-
-            <div>
-                <a href="hobbies.html#pray"><li>Praying</li></a>
-                <a href="hobbies.html#code"><li>Coding</li></a>
-                <a href="hobbies.html#explore"><li>Exploring</li></a>
-                <a href="hobbies.html#social"><li>Socialising with friends</li></a>
-                <a href="hobbies.html#swim"><li>Swimming at pools</li></a>
-
-
+        <section class="boxes">
+            <div class="boxes-container">
+             <a href="#about" class="gray"><div ><h1>My Bio</h1></div></a>
+             <div class="white"></div>
+             <a href="myphoto.html" class="portage"><div ><h1>My Photo</h1></div></a>
+             <div class="white"></div>
+             <a href="education.html" class="wisful"><div ><h1>My Education History</h1></div></a>
+             <div class="white"></div>
+             <a href="hobbies.html" class="sail"><div ><h1>My Hobbies</h1></div></a>
+             <div class="white"></div>
+             <a href="#contact" class="wiwak"><div ><h1>Contact Me</h1></div></a>
+ 
+ 
             </div>
-        </div>
+ 
+         </section>
 
-    </section>
-    
+        <section id="landing">
+            <div>
+                <h1>Welcome to my personal website</h1>
+                <p>Dear visitor, i am glad you visited my site. Thanks again for that choice and please visit again incase of need</p>
+                <p>THis is where you get to know more about me, and could draw inspirations from here.</p>
+                <h4>Please continue reading through the site and i wish u good luck</h4>
+            </div>
+        </section> 
+        
 
-    <section id="contact">
-        <div>
-            <h1>CONTACT ME</h1>
-            <p>Feel like you need to talk to me? I am just a message away. 
-                Please send me a message to talk to me by filling the form below.
-            </p>
+        <section id="about">
+            <div>
+                <h1>ABOUT ME</h1>
+                
+                <!-- paragraph one -->
+                <p>I am <b>Mamgbi Geofrey</b> (my photo is attached above) a ugandan citizen currently in ugandas capital kampala.
+                    I am much involved into technology mostly computing and information technology and systems and as 
+                    such, i hold a Bachelor's degree in Software engineering with a wide range of knowlege about techniques to
+                    solve current problems facing the community interms of digitalizing the day to day activities.
+                </p>
+                <!-- paragraph two of about -->
+                <p>
+                    I am a well brought up, committed and an innovative person who believes in job efficiency and 
+                    yet accurate work. I am a person free to associate and work with any categories of people in 
+                    the tasks assigned and therefore have good interpersonal skills. <br><br>
+                    
+                    Furthermore, I am a simple and easy to reach/approach person who values every person’s position 
+                    as being equal and therefore can attend to any class/categories of people. Always doing the 
+                    right thing at the right time is my slogan and ready to adapt to future changes in the 
+                    organization, coming up with new skills as indicated by being innovative.
+                </p> 
+            </div>
 
-            <form action="mailto:gmamgbi1999@gmail.com?subject=Message from personal website" >
-                <label for="name">Full name</label>
-                <input type="text" name="name" placeholder="Please enter your full name here">
-                <br>
+        </section>
 
-                <label for="email">Email</label>
-                <input type="email" name="email" placeholder="Please enter your email address here">
-                <br>
+        <section id="contact">
+            <div>
+                <h1>CONTACT ME</h1>
+                <p>Feel like you need to talk to me? I am just a message away. 
+                    Please send me a message to talk to me by filling the form below.
+                </p>
 
-                <label for="subject">Message subject</label>
-                <input type="text" name="subject" placeholder="Please enter the subject of your message">
-                <br>
+                <form action="mailto:gmamgbi1999@gmail.com?subject=Message from personal website" >
+                    <label for="name">Full name</label>
+                    <input type="text" name="name" placeholder="Please enter your full name here">
+                    <br>
 
-                <label for="message">Message body</label>
-                <input type="text" name="message" placeholder="Please type your message here">
-                <br>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Please enter your email address here">
+                    <br>
 
-                <button>Submit</button>
-            </form>
-        </div>
+                    <label for="subject">Message subject</label>
+                    <input type="text" name="subject" placeholder="Please enter the subject of your message">
+                    <br>
 
-    </section>
-    
+                    <label for="message">Message body</label>
+                    <input type="text" name="message" placeholder="Please type your message here">
+                    <br>
+
+                    <button>Submit</button>
+                </form>
+            </div>
+
+        </section>
+        
 
 
     </main>

@@ -1,0 +1,84 @@
+
+    *{
+        padding: 0;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        height: 64px;
+        background-color: azure;
+        width: 100%;
+    }
+    nav img{
+        float: left;
+        width: 50px;
+        border-radius: 50%;
+    }
+    nav ul{
+        float: right;
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul a{
+        text-decoration: none;
+    }
+    nav ul a li{
+        list-style: none;
+        text-transform: uppercase;
+        margin-left: 20px;
+        color: green;
+    }
+    #landing{
+        margin-top: 100px;
+    }
+
+
+    /*-----styling the boxes-----*/
+    .boxes{
+        width: 80%;
+        margin: auto;
+    }
+    .boxes .white{
+        background-color: white;
+    }
+    .boxes-container{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+    }
+    .boxes-container a{
+        height: 200px;
+        text-decoration: none;
+        color: black;
+    }
+    .boxes-container .sail:hover,
+    .boxes-container .portage:hover,
+    .boxes-container .wisful:hover,
+    .boxes-container .gray:hover,
+    .boxes-container .wiwak:hover{
+        background-color: #C111c3;
+        transition: 1s;
+        border-radius: 4px;
+        /* height: 220px; */
+        cursor: pointer;
+    }
+    
+    .boxes-container div h1{
+        text-align: center;
+        margin-top: 100px;
+    }
+    .gray{
+        background-color: #c8c8c8;
+    }
+    .portage{
+        background-color: #8e8ef5;
+    }
+    .wisful{
+        background-color: #9f9fd2;
+    }
+    .wiwak{
+        background-color: #F5b1b6;
+    }
+    .sail{
+        background-color: #B1d7f5;
+    }
